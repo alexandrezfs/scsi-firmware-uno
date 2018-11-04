@@ -50,7 +50,6 @@ void DataflashManager_WriteBlocks(USB_ClassInfo_MS_Device_t *const MSInterfaceIn
         return;
 
     while (TotalBlocks) {
-        logChar('w');
 
         for (uint8_t bufno = 0; bufno < 512 / MASS_STORAGE_IO_EPSIZE; ++bufno) {
             /* Check if the endpoint is currently empty */
@@ -218,8 +217,6 @@ void DataflashManager_ReadBlocks(USB_ClassInfo_MS_Device_t *const MSInterfaceInf
     /* Wait until endpoint is ready before continuing */
     if (Endpoint_WaitUntilReady())
         return;
-
-    logChar('B');
 
     while (TotalBlocks) {
         /* Check if the endpoint is currently full */

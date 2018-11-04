@@ -1,7 +1,7 @@
 # SCSI Mass Storage firmware for ATmega16u2
 
 This firmware turns your Arduino UNO into a mass storage device. It does this by flashing microchip firmware `ATmega16u2`.
-The firmware do the following:
+The firmware does the following:
 
 + Return appropriate descriptors to let the host load the appropriate FAT/SCSI driver.
 + Simulate a virtual FAT16 filesystem.

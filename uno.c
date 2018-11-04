@@ -71,10 +71,6 @@ volatile struct
 	uint8_t PingPongLEDPulse; /**< Milliseconds remaining for enumeration Tx/Rx ping-pong LED pulse */
 } PulseMSRemaining;
 
-void logChar(char c) {
-	// RingBuffer_Insert(&USARTtoUSB_Buffer, c);
-}
-
 /** Main program entry point. This routine contains the overall program flow, including initial
  *  setup of all components and the main program loop.
  */

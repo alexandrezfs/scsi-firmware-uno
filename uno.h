@@ -79,7 +79,6 @@
 		void EVENT_USB_Device_ConfigurationChanged(void);
 		void EVENT_USB_Device_ControlRequest(void);
 		void HID_Task(void);
-		void logChar(char c);
 
 /** Circular buffer to hold data from the host before it is sent to the device via the serial port. */
 extern RingBuff_t USBtoUSART_Buffer;
